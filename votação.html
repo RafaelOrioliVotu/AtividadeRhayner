@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOTAÇÃO</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+
+        body {
+            background-color: rgb(232, 252, 252);
+        }
+
+        #lista {
+            width: 500px;
+        }
+
+        fieldset {
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+
+        select {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>VOTAÇÃO</h1>
+        <h3>REPRESENTANTE DE SALA</h3>
+    </header>
+    <section>
+        <fieldset>
+            <h4>ESCOLHA QUEM VOCÊ GOSTARIA QUE FOSSE O LÍDER DE SALA</h4>
+            <form method="get" action="save.txt">
+                <input type="text" name="nome" placeholder="Digite seu nome">
+                <input type="text" name="sobrenome" placeholder="Digite seu sobrenome"><br>
+                <select name="lista" id="lista">
+                    <option>CANDIDATO 1</option>
+                    <option>CANDIDATO 2</option>
+                    <option>CANDIDATO 3</option>
+                    <option>CANDIDATO 4</option>
+                    <option>CANDIDATO 5</option>
+                </select>
+                <input type="submit" value="Enviar">
+            </form>
+        </fieldset>
+    </section>
+</body>
+
+</html>
